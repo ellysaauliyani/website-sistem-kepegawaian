@@ -1,0 +1,227 @@
+.bi {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+/*
+ * Sidebar
+ */
+
+ .sidebar {
+  background-color: #83efd0 !important;
+  padding: 0px;
+  height: 100vh;
+  position: fixed; 
+}
+
+
+.sidebar-content {
+  overflow-y: auto;
+  max-height: calc(100vh - 40px);
+}
+
+
+.sidebar .nav-link {
+  background-color: #83efd0 !important;
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.sidebar .nav-link.active {
+  color: #2470dc;
+}
+
+.sidebar-heading {
+  background-color: #057959 !important;
+  font-size: .75rem;
+}
+
+/*
+ * Navbar
+ */
+
+ .navbar-brand {
+  padding-top: 0.5rem; /* Decreased padding for smaller vertical alignment */
+  padding-bottom: 0.5rem; /* Decreased padding for smaller vertical alignment */
+  background-color: rgb(12, 148, 239); /* Orange background color */
+}
+
+/* Navbar background */
+.navbar {
+  background-color: #9abfff; /* Same orange background color */
+}
+
+/* Form control within navbar */
+.navbar .form-control {
+  padding: 0.25rem 0.5rem; /* Further reduced padding for a sleeker look */
+  border-radius: 0.25rem; /* Further increased border radius for rounded corners */
+}
+
+
+/* CSS for search form */
+.search {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.search .form-control {
+  width: 200px; /* Sesuaikan lebar sesuai kebutuhan */
+  padding: 8px; /* Sesuaikan padding sesuai kebutuhan */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.search .btn {
+  margin-top: 10px; /* Tambahkan jarak atas */
+  padding: 6px 12px; /* Sesuaikan padding sesuai kebutuhan agar tombol lebih kecil */
+  border-radius: 4px;
+  background-color: #007bff; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  border: 1px solid #007bff; /* Warna border tombol */
+  transition: background-color 0.3s ease;
+}
+
+
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  
+
+}
+
+
+/* Table styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-top: 20px; /* Menambah jarak di atas tabel */
+}
+
+.table th, .table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center; /* Rata tengah teks di dalam sel tabel */
+}
+
+.table th {
+  background-color: #4f74f9;
+  color: #fff;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+  margin-bottom: 10px; /* Menambah jarak di bawah baris genap */
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #fff; /* Warna latar belakang baris ganjil */
+  margin-bottom: 10px; /* Menambah jarak di bawah baris ganjil */
+}
+
+
+/* Button styles */
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: right; /* Teks rata tengah */
+}
+
+.btn-success {
+  background-color: #007bff; /* Warna hijau */
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #007bff; /* Warna hijau yang sedikit lebih gelap pada hover */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Warna merah */
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Warna merah yang sedikit lebih gelap pada hover */
+}
+
+/* Form styles */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Heading styles */
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+
+
+/* Container Styles */
+.container {
+  max-width: 400px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 200px; /* Adjust the width of the form inputs */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.card {
+  margin-bottom: 20px; /* Margin between cards */
+  padding: 15px; /* Padding inside the cards */
+  border-radius: 8px; /* Rounded corners for cards */
+  height: 200px;
+  border: 1px solid #ced4da; 
+}
+
+.card-body {
+  padding: 20px; /* Padding inside the card body */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Larger font size for titles */
+}
+
+.card-text {
+  color: #6c7d71; /* Text color for card content */
+}
