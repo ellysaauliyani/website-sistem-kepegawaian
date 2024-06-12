@@ -18,8 +18,8 @@
         </div>
         <div class="form-group">
             <label>Nama:</label>
-            <div class="form-control">{{$loggedInUserName }}</div>
-        </div>
+            <input type="text" id="nama" name="nama" class="form-control" value="{{ $loggedInUserName}}" readonly required/>
+            </div>
         <div class="form-group">
             <label>Jenis Kelamin:</label>
             <div class="form-check">
@@ -277,7 +277,7 @@
             </div>
             <div class="form-group">
         <label>Tanggal pengajuan:</label>
-        <input type="date" class="tgl_pengajuan" id="tgl_pengajuan" name="tgl_pengajuan" readonly required/>
+        <input type="date" class="tgl_pengajuan" name="tgl_pengajuan" required/>
     </div>
 
     <div class="form-group">
