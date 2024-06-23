@@ -27,6 +27,16 @@
     <main class="form-signin w-100 m-auto">
         <form action="/simpan_userSignUp" method="POST" onsubmit="return validateForm()"> 
             @csrf 
+
+            @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $errors)
+                    <li>{{$errors}}</li>
+                    @endforeach
+    </ul>
+    </div>
+    @endif
             <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
             <div class="form-floating">
                 <input type="nama" class="form-control" id="floatingInputNama" name="nama" placeholder="Nama">

@@ -79,9 +79,7 @@ public function userSignIn(Request $request)
         return redirect('/tampilan_pengguna');
     }
 
-    return back()->withErrors([
-        'email' => 'The provided credentials do not match our records.',
-    ]);
+    return redirect()->back()->with('error', 'Email atau Password yang dimasukkan salah');
 }
 
 

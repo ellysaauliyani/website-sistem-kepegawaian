@@ -14,6 +14,11 @@
         <form action="/simpan_signIn" method="POST"> 
             @csrf 
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            @if (session('error'))
+            <div class="alert alert-danger mt-3">
+                {{session('error')}}
+        </div>
+            @endif
         
             <div class="form-floating">
                 <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
